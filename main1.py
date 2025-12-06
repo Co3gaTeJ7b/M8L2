@@ -1,7 +1,7 @@
 import telebot
 import os
 import random
-bot = telebot.TeleBot("8032863270:AAEv5JsUpWS8IaAMo9yKxGXdkyXJWSdK0Kc")
+bot = telebot.TeleBot("")
 
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
@@ -66,6 +66,7 @@ def send_mem(message):
    #txt = (message.text)
 
    #bot.reply_to(message, f"Вы написали: {txt}. Этот бот воспринимает команды /fakt, /say , /help, /pomoch.")
+
 
 
 bot.polling()
